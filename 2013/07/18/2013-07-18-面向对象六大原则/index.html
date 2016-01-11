@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://qianzui.github.io/2013/07/18/2013-07-18-面向对象六大原则/index.html">
 <meta property="og:site_name" content="qianzui's blog">
 <meta property="og:description" content="面向对象六大原则">
-<meta property="og:updated_time" content="2015-03-30T07:43:15.000Z">
+<meta property="og:updated_time" content="2016-01-11T13:59:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面向对象六大原则">
 <meta name="twitter:description" content="面向对象六大原则">
@@ -155,6 +155,7 @@
 <p>在做开发的这些年中，我渐渐的感觉到，其实国内的一些初、中级工程师写的东西不规范或者说不够清晰的原因是缺乏一些指导原则。他们手中挥舞着面向对象的大旗，写出来的东西却充斥着面向过程的气味。也许是他们不知道有这些原则，也许是他们知道但是不能很好运用到实际代码中，亦或是他们没有在实战项目中体会到这些原则能够带来的优点，以至于他们对这些原则并没有足够的重视。     </p>
 <p>今天，我们就是以剖析优秀的Android网络框架Volley为例来学习这六大面向对象的基本原则，体会它们带来的强大能量。         </p>
 <p>在此之前，有一点需要大家知道，熟悉这些原则不会让你写出优秀的代码，只是为你的优秀代码之路铺上了一层栅栏，在这些原则的指导下你才能避免陷入一些常见的代码泥沼，从而让你专心写出优秀的东西。另外，我是个新人，以下只是我个人的观点。如果你觉得还行，可以顶个帖支持一下；如果你觉得它烂透了，那请分享你的经验。         </p>
+<a id="more"></a>
 <h2 id="u4E00_u3001_u5355_u4E00_u804C_u8D23_u539F_u5219__uFF08_Single_Responsibility_Principle__uFF09"><a href="#u4E00_u3001_u5355_u4E00_u804C_u8D23_u539F_u5219__uFF08_Single_Responsibility_Principle__uFF09" class="headerlink" title="一、单一职责原则 （ Single Responsibility   Principle ）"></a>一、单一职责原则 （ Single Responsibility   Principle ）</h2><h3 id="1-1__u7B80_u8FF0"><a href="#1-1__u7B80_u8FF0" class="headerlink" title="1.1 简述"></a>1.1 简述</h3><p>单一职责原则的英文名称是Single Responsibility Principle，简称是SRP，简单来说一个类只做一件事。这个设计原则备受争议却又及其重要的原则。只要你想和别人争执、怄气或者是吵架，这个原则是屡试不爽的。因为单一职责的划分界限并不是如马路上的行车道那么清晰，很多时候都是需要靠个人经验来界定。当然最大的问题就是对职责的定义，什么是类的职责，以及怎么划分类的职责。      </p>
 <p>试想一下，如果你遵守了这个原则，那么你的类就会划分得很细，每个类都有自己的职责。恩，这不就是高内聚、低耦合么！ 当然，如何界定类的职责这需要你的个人经验了。      </p>
 <h3 id="1-2__u793A_u4F8B"><a href="#1-2__u793A_u4F8B" class="headerlink" title="1.2 示例"></a>1.2 示例</h3><p>在Volley中，我觉得很能够体现SRP原则的就是HttpStack这个类族了。HttpStack定义了一个执行网络请求的接口，代码如下 : </p>
@@ -510,7 +511,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://qianzui.github.io/2013/07/18/2013-07-18-面向对象六大原则/" data-id="cija13k970000w1n796qbiig0" class="article-share-link">分享到</a>
+      <a data-url="http://qianzui.github.io/2013/07/18/2013-07-18-面向对象六大原则/" data-id="cija1d6o30000isn7qkxa8htb" class="article-share-link">分享到</a>
       
         <a href="http://qianzui.github.io/2013/07/18/2013-07-18-面向对象六大原则/#ds-thread" class="article-comment-link">评论</a>
       

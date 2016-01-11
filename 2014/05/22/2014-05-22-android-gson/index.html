@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://qianzui.github.io/2014/05/22/2014-05-22-android-gson/index.html">
 <meta property="og:site_name" content="qianzui's blog">
 <meta property="og:description" content="在Android上使用Gson解析库">
-<meta property="og:updated_time" content="2015-03-17T10:03:55.000Z">
+<meta property="og:updated_time" content="2016-01-11T13:59:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android Gson">
 <meta name="twitter:description" content="在Android上使用Gson解析库">
@@ -155,6 +155,7 @@
 <p>gson的官方下载地址：<a href="https://code.google.com/p/google-gson/" target="_blank" rel="external">google-gson</a></p>
 <h2 id="u5355_u4E2A_u5BF9_u8C61"><a href="#u5355_u4E2A_u5BF9_u8C61" class="headerlink" title="单个对象"></a>单个对象</h2><p>首先我们来看一个最简单的用法，假设json的数据格式是这样的：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"id"</span>: <span class="number">100</span>,</span><br><span class="line"><span class="string">"body"</span>: <span class="string">"It is my post"</span>,</span><br><span class="line"><span class="string">"number"</span>: <span class="number">0.13</span>,</span><br><span class="line"><span class="string">"created_at"</span>: <span class="string">"2014-05-22 19:12:38"</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>那么我们只需要定义对应的一个类:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Foo</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> id;</span><br><span class="line">    <span class="keyword">public</span> String body;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">float</span> number;</span><br><span class="line">    <span class="keyword">public</span> String created_at;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>使用起来只需如下几行代码就行了：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String JSON_DATA = <span class="string">"..."</span>;</span><br><span class="line">Foo foo = <span class="keyword">new</span> Gson().fromJson(JSON_DATA, Foo.class);</span><br></pre></td></tr></table></figure></p>
@@ -188,7 +189,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://qianzui.github.io/2014/05/22/2014-05-22-android-gson/" data-id="cija13k9y0005w1n7t213ram5" class="article-share-link">分享到</a>
+      <a data-url="http://qianzui.github.io/2014/05/22/2014-05-22-android-gson/" data-id="cija1d6op0005isn7mac9hfr7" class="article-share-link">分享到</a>
       
         <a href="http://qianzui.github.io/2014/05/22/2014-05-22-android-gson/#ds-thread" class="article-comment-link">评论</a>
       

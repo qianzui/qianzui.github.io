@@ -196,7 +196,7 @@ a:visited {
 .archive-year,
 .widget-title {
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
   color: #999;
   line-height: 1em;
 }
@@ -1827,7 +1827,7 @@ pre .javascript .function {
 }
 #recent-post li .item-inner .item-date {
   color: #aaa;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 #recent-post li:hover .item-thumbnail {

@@ -1255,6 +1255,8 @@ a.article-title:hover {
 .archive-article-inner {
   padding: 10px;
   margin-bottom: 15px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .archive-article-title {
   text-decoration: none;
@@ -1863,8 +1865,9 @@ pre .javascript .function {
 }
 .article-simple {
   padding-left: 20px;
+  padding-bottom: 5px;
   background: #fff;
-  font-size: 15px;
+  font-size: 16px;
 }
 .article-simple-header {
   padding: 1px 1px;

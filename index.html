@@ -88,7 +88,7 @@
         <span>文章</span>
       </div>
       <div class="article-info-block">
-        2
+        3
         <span>标签</span>
       </div>
     </div>
@@ -113,65 +113,6 @@
 </aside>
       <section id="main">
   
-  <article id="post-2014-01-12-Android布局优化" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-	    <!-- Table of Contents -->        
-      
-
-        <p>date: 2014-01-12 22:33:07<br>keywords: blog<br>description: Android布局优化<br>title: “Android布局优化”<br>categories: [Android]</p>
-<h1 id="tags_3A__5B_u5E03_u5C40_u4F18_u5316_5D"><a href="#tags_3A__5B_u5E03_u5C40_u4F18_u5316_5D" class="headerlink" title="tags: [布局优化]"></a>tags: [布局优化]</h1><ul>
-<li><p>去除不必要的嵌套和节点<br>  这是最基本的一条，但也是最不好做到的一条，往往不注意的时候难免会一些嵌套等。    </p>
-<ul>
-<li>首次不需要的节点设置为<code>GONE</code>或使用<code>ViewStud</code>.       </li>
-<li>使用<code>Relativelayout</code>代替<code>LinearLayout</code>.<br>平时写布局的时候要多注意，写完后可以通过<code>Hierarchy Viewer</code>或在手机上通过开发者选项中的显示布局边界来查看是否有不必要的嵌套。</li>
-</ul>
-</li>
-<li><p>使用<code>include</code><br>  <code>include</code>可以用于将布局中一些公共的部分提取出来。在需要的时候使用即可，比喻一些页面统一的<code>loading</code>页。<br>   <code>include</code>标签的<code>layout</code>属性指定所要包含的布局文件，我们也可以通过<code>android:id</code>或者一些其他的属性来覆盖被引入布局的根节点所对应<br>的属性值。      </p>
-   <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">include</span></span><br><span class="line"><span class="attribute">layout</span>=<span class="value">"@layout/loading"</span></span><br><span class="line"><span class="attribute">android:id</span>=<span class="value">"@+id/loading_main"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  <code>loading.xml</code>内容为：    </p>
-  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">RelativeLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">	<span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></span><br><span class="line">	<span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">ProgressBar</span></span><br><span class="line">		<span class="attribute">android:id</span>=<span class="value">"@+id/pb_loadiing"</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"28dip"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"28dip"</span></span><br><span class="line">		<span class="attribute">android:layout_centerInParent</span>=<span class="value">"true"</span></span><br><span class="line">		<span class="attribute">android:indeterminateDrawable</span>=<span class="value">"@drawable/progressbar_anim_drawable"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">TextView</span></span><br><span class="line">		<span class="attribute">android:layout_below</span>=<span class="value">"@id/pb_loadiing"</span></span><br><span class="line">		<span class="attribute">android:layout_centerHorizontal</span>=<span class="value">"true"</span></span><br><span class="line">		<span class="attribute">android:layout_marginTop</span>=<span class="value">"10dp"</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:text</span>=<span class="value">"loading..."</span></span><br><span class="line">		<span class="attribute">android:textSize</span>=<span class="value">"15sp"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">RelativeLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用<code>&lt;merge&gt;</code>标签<br>  <code>merge</code>可以有效的解决布局的层级关系。我们通过一个例子来说明一下：            </p>
-  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">FrameLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">	<span class="attribute">android:layout_width</span>=<span class="value">"fill_parent"</span></span><br><span class="line">	<span class="attribute">android:layout_height</span>=<span class="value">"fill_parent"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">ImageView</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"fill_parent"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"fill_parent"</span></span><br><span class="line"></span><br><span class="line">		<span class="attribute">android:scaleType</span>=<span class="value">"center"</span></span><br><span class="line">		<span class="attribute">android:src</span>=<span class="value">"@drawable/ic_launcher"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">TextView</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_marginBottom</span>=<span class="value">"20dip"</span></span><br><span class="line">		<span class="attribute">android:textSize</span>=<span class="value">"22sp"</span></span><br><span class="line">		<span class="attribute">android:textColor</span>=<span class="value">"#990000"</span></span><br><span class="line">		<span class="attribute">android:layout_gravity</span>=<span class="value">"center_horizontal|bottom"</span></span><br><span class="line">		<span class="attribute">android:text</span>=<span class="value">"TEST"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">FrameLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  我们在一个页面中显示该部分内容，运行后观察<code>Hierarchy Viewer</code>。<br>  <img src="https://raw.githubusercontent.com/CharonChui/Pictures/master/merge_1.png" alt="image"><br>  我们会发现除了我们布局最外层还会有一层<code>FrameLayout</code>，这是因为<code>Activity</code>内容视图的<code>parent view</code>就是一个<code>FrameLayout</code>，所以对于我们来说无意中已经多了一层毫无意义的布局。<br>  接下来<code>merge</code>的功能就能发挥了，修改代码如下。              </p>
-  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">merge</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">ImageView</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"fill_parent"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"fill_parent"</span></span><br><span class="line">		<span class="attribute">android:scaleType</span>=<span class="value">"center"</span></span><br><span class="line">		<span class="attribute">android:src</span>=<span class="value">"@drawable/ic_launcher"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">TextView</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_marginBottom</span>=<span class="value">"20dip"</span></span><br><span class="line">		<span class="attribute">android:textSize</span>=<span class="value">"22sp"</span></span><br><span class="line">		<span class="attribute">android:textColor</span>=<span class="value">"#990000"</span></span><br><span class="line">		<span class="attribute">android:layout_gravity</span>=<span class="value">"center_horizontal|bottom"</span></span><br><span class="line">		<span class="attribute">android:text</span>=<span class="value">"TEST"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">merge</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  接下来我们在用<code>Hierarchy Viewer</code>观察就会发现完美的去掉了一层<code>FrameLayout</code><br>  <img src="https://raw.githubusercontent.com/CharonChui/Pictures/master/merge_2.png" alt="image"><br>  当然上面我们使用<code>merge</code>是因为跟布局正好是<code>FrameLayout</code>并且没有<code>backgroud</code>和<code>padding</code>等这些属性。如果根本局是<code>LinearLayout</code>等，就没法直接使用<code>merge</code>了。<br>  在<code>include</code>的时候很容易造成布局层级嵌套过多，结合<code>merge</code>使用能有效解决这个问题。</p>
-</li>
-<li><p>使用<code>ViewStub</code><br>  <code>ViewStub</code>标签与<code>include</code>一样可以用来引入一个外部布局，但是<code>Viewstub</code>引入的布局默认不会解析与显示，宽高为0，<code>View</code>也为<code>null</code>,这样就会在解析<code>layout</code>时节省<code>cpu</code>和内存。简单的理解就是<code>ViewStub</code>是<br><code>include</code>加上<code>GONE</code>.<code>ViewStub</code>常用来引入那些默认不会显示，只在特殊情况下显示的布局，如进度布局、网络失败显示的刷新布局、信息出错出现的提示布局等.</p>
-  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">RelativeLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">	<span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></span><br><span class="line">	<span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span> &gt;</span></span><br><span class="line"></span><br><span class="line">	……</span><br><span class="line">	<span class="tag">&lt;<span class="title">ViewStub</span></span><br><span class="line">		<span class="attribute">android:id</span>=<span class="value">"@+id/network_unreachble"</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span></span><br><span class="line">		<span class="attribute">android:layout</span>=<span class="value">"@layout/network_unreachble"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">RelativeLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  在代码中通过<code>(ViewStub)findViewById(id)</code>找到<code>ViewStub</code>，使用<code>inflate()</code>展开<code>ViewStub</code>,然后得到子<code>View</code>，如下：</p>
-  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> View mNetErrorView;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">showNetError</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (mNetErrorView != <span class="keyword">null</span>) &#123;</span><br><span class="line">		mNetErrorView.setVisibility(View.VISIBLE);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	ViewStub stub = (ViewStub)findViewById(R.id.network_unreachble);</span><br><span class="line">	<span class="comment">// 解析并且显示该部分，返回值就是解析后的该`View`</span></span><br><span class="line">	mNetErrorView = stub.inflate();</span><br><span class="line">	Button networkSetting = (Button)mNetErrorView.findViewById(R.id.bt_network);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">showNormal</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (mNetErrorView != <span class="keyword">null</span>) &#123;</span><br><span class="line">		mNetErrorView.setVisibility(View.GONE);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>  或者也可以通过第二种方式:</p>
-  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">View viewStub = findViewById(R.id.network_unreachble);</span><br><span class="line"><span class="comment">// ViewStub被展开后的布局所替换</span></span><br><span class="line">viewStub.setVisibility(View.VISIBLE);   </span><br><span class="line"><span class="comment">// 获取展开后的布局</span></span><br><span class="line">mNetErrorView =  findViewById(R.id.network_unreachble);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>减少不必要的<code>Inflate</code><br>  如上一步中<code>stub.infalte()</code>后将该<code>View</code>进行记录或者是<code>ListView</code>中<code>item inflate</code>的时候。</p>
-</li>
-</ul>
-
-      
-    </div>
-    
-
-    
-    
-
-    <footer class="article-footer">
-      <a data-url="http://qianzui.github.io/2016/01/12/2014-01-12-Android布局优化/" data-id="cijbbwuqs00070sn7kdee4sad" class="article-share-link">分享到</a>
-      
-        <a href="http://qianzui.github.io/2016/01/12/2014-01-12-Android布局优化/#ds-thread" class="article-comment-link">评论</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
   <article id="post-2014-05-22-android-gson" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -219,12 +160,96 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://qianzui.github.io/2014/05/22/2014-05-22-android-gson/" data-id="cijbbwuqn00020sn7wfpl4gb5" class="article-share-link">分享到</a>
+      <a data-url="http://qianzui.github.io/2014/05/22/2014-05-22-android-gson/" data-id="cijbbyu870002dvn73jqn2jzl" class="article-share-link">分享到</a>
       
         <a href="http://qianzui.github.io/2014/05/22/2014-05-22-android-gson/#ds-thread" class="article-comment-link">评论</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gson/">Gson</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  <article id="post-2014-01-12-Android布局优化" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/01/12/2014-01-12-Android布局优化/">Android布局优化</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          <div class="article-date">
+  <i class="fa fa-calendar"></i>
+  <a href="/2014/01/12/2014-01-12-Android布局优化/">
+    <time datetime="2014-01-12T14:33:07.000Z" itemprop="datePublished">2014-01-12</time>
+  </a>
+</div>
+          
+  <div class="article-category">
+  	<i class="fa fa-folder"></i>
+    <a class="article-category-link" href="/categories/Android/">Android</a>
+  </div>
+
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+	    <!-- Table of Contents -->        
+      
+
+        <ul>
+<li><p>去除不必要的嵌套和节点<br>  这是最基本的一条，但也是最不好做到的一条，往往不注意的时候难免会一些嵌套等。    </p>
+<ul>
+<li>首次不需要的节点设置为<code>GONE</code>或使用<code>ViewStud</code>.       </li>
+<li>使用<code>Relativelayout</code>代替<code>LinearLayout</code>.<br>平时写布局的时候要多注意，写完后可以通过<code>Hierarchy Viewer</code>或在手机上通过开发者选项中的显示布局边界来查看是否有不必要的嵌套。</li>
+</ul>
+</li>
+<li><p>使用<code>include</code><br>  <code>include</code>可以用于将布局中一些公共的部分提取出来。在需要的时候使用即可，比喻一些页面统一的<code>loading</code>页。<br>   <code>include</code>标签的<code>layout</code>属性指定所要包含的布局文件，我们也可以通过<code>android:id</code>或者一些其他的属性来覆盖被引入布局的根节点所对应<br>的属性值。      </p>
+   <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">include</span></span><br><span class="line"><span class="attribute">layout</span>=<span class="value">"@layout/loading"</span></span><br><span class="line"><span class="attribute">android:id</span>=<span class="value">"@+id/loading_main"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  <code>loading.xml</code>内容为：    </p>
+  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">RelativeLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">	<span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></span><br><span class="line">	<span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">ProgressBar</span></span><br><span class="line">		<span class="attribute">android:id</span>=<span class="value">"@+id/pb_loadiing"</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"28dip"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"28dip"</span></span><br><span class="line">		<span class="attribute">android:layout_centerInParent</span>=<span class="value">"true"</span></span><br><span class="line">		<span class="attribute">android:indeterminateDrawable</span>=<span class="value">"@drawable/progressbar_anim_drawable"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">TextView</span></span><br><span class="line">		<span class="attribute">android:layout_below</span>=<span class="value">"@id/pb_loadiing"</span></span><br><span class="line">		<span class="attribute">android:layout_centerHorizontal</span>=<span class="value">"true"</span></span><br><span class="line">		<span class="attribute">android:layout_marginTop</span>=<span class="value">"10dp"</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:text</span>=<span class="value">"loading..."</span></span><br><span class="line">		<span class="attribute">android:textSize</span>=<span class="value">"15sp"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">RelativeLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用<code>&lt;merge&gt;</code>标签<br>  <code>merge</code>可以有效的解决布局的层级关系。我们通过一个例子来说明一下：            </p>
+  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">FrameLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">	<span class="attribute">android:layout_width</span>=<span class="value">"fill_parent"</span></span><br><span class="line">	<span class="attribute">android:layout_height</span>=<span class="value">"fill_parent"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">ImageView</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"fill_parent"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"fill_parent"</span></span><br><span class="line"></span><br><span class="line">		<span class="attribute">android:scaleType</span>=<span class="value">"center"</span></span><br><span class="line">		<span class="attribute">android:src</span>=<span class="value">"@drawable/ic_launcher"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">TextView</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_marginBottom</span>=<span class="value">"20dip"</span></span><br><span class="line">		<span class="attribute">android:textSize</span>=<span class="value">"22sp"</span></span><br><span class="line">		<span class="attribute">android:textColor</span>=<span class="value">"#990000"</span></span><br><span class="line">		<span class="attribute">android:layout_gravity</span>=<span class="value">"center_horizontal|bottom"</span></span><br><span class="line">		<span class="attribute">android:text</span>=<span class="value">"TEST"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">FrameLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  我们在一个页面中显示该部分内容，运行后观察<code>Hierarchy Viewer</code>。<br>  <img src="https://raw.githubusercontent.com/CharonChui/Pictures/master/merge_1.png" alt="image"><br>  我们会发现除了我们布局最外层还会有一层<code>FrameLayout</code>，这是因为<code>Activity</code>内容视图的<code>parent view</code>就是一个<code>FrameLayout</code>，所以对于我们来说无意中已经多了一层毫无意义的布局。<br>  接下来<code>merge</code>的功能就能发挥了，修改代码如下。              </p>
+  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">merge</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">ImageView</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"fill_parent"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"fill_parent"</span></span><br><span class="line">		<span class="attribute">android:scaleType</span>=<span class="value">"center"</span></span><br><span class="line">		<span class="attribute">android:src</span>=<span class="value">"@drawable/ic_launcher"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">TextView</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_marginBottom</span>=<span class="value">"20dip"</span></span><br><span class="line">		<span class="attribute">android:textSize</span>=<span class="value">"22sp"</span></span><br><span class="line">		<span class="attribute">android:textColor</span>=<span class="value">"#990000"</span></span><br><span class="line">		<span class="attribute">android:layout_gravity</span>=<span class="value">"center_horizontal|bottom"</span></span><br><span class="line">		<span class="attribute">android:text</span>=<span class="value">"TEST"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">merge</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  接下来我们在用<code>Hierarchy Viewer</code>观察就会发现完美的去掉了一层<code>FrameLayout</code><br>  <img src="https://raw.githubusercontent.com/CharonChui/Pictures/master/merge_2.png" alt="image"><br>  当然上面我们使用<code>merge</code>是因为跟布局正好是<code>FrameLayout</code>并且没有<code>backgroud</code>和<code>padding</code>等这些属性。如果根本局是<code>LinearLayout</code>等，就没法直接使用<code>merge</code>了。<br>  在<code>include</code>的时候很容易造成布局层级嵌套过多，结合<code>merge</code>使用能有效解决这个问题。</p>
+</li>
+<li><p>使用<code>ViewStub</code><br>  <code>ViewStub</code>标签与<code>include</code>一样可以用来引入一个外部布局，但是<code>Viewstub</code>引入的布局默认不会解析与显示，宽高为0，<code>View</code>也为<code>null</code>,这样就会在解析<code>layout</code>时节省<code>cpu</code>和内存。简单的理解就是<code>ViewStub</code>是<br><code>include</code>加上<code>GONE</code>.<code>ViewStub</code>常用来引入那些默认不会显示，只在特殊情况下显示的布局，如进度布局、网络失败显示的刷新布局、信息出错出现的提示布局等.</p>
+  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">RelativeLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">	<span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></span><br><span class="line">	<span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span> &gt;</span></span><br><span class="line"></span><br><span class="line">	……</span><br><span class="line">	<span class="tag">&lt;<span class="title">ViewStub</span></span><br><span class="line">		<span class="attribute">android:id</span>=<span class="value">"@+id/network_unreachble"</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span></span><br><span class="line">		<span class="attribute">android:layout</span>=<span class="value">"@layout/network_unreachble"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">RelativeLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  在代码中通过<code>(ViewStub)findViewById(id)</code>找到<code>ViewStub</code>，使用<code>inflate()</code>展开<code>ViewStub</code>,然后得到子<code>View</code>，如下：</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> View mNetErrorView;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">showNetError</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (mNetErrorView != <span class="keyword">null</span>) &#123;</span><br><span class="line">		mNetErrorView.setVisibility(View.VISIBLE);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	ViewStub stub = (ViewStub)findViewById(R.id.network_unreachble);</span><br><span class="line">	<span class="comment">// 解析并且显示该部分，返回值就是解析后的该`View`</span></span><br><span class="line">	mNetErrorView = stub.inflate();</span><br><span class="line">	Button networkSetting = (Button)mNetErrorView.findViewById(R.id.bt_network);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">showNormal</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (mNetErrorView != <span class="keyword">null</span>) &#123;</span><br><span class="line">		mNetErrorView.setVisibility(View.GONE);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>  或者也可以通过第二种方式:</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">View viewStub = findViewById(R.id.network_unreachble);</span><br><span class="line"><span class="comment">// ViewStub被展开后的布局所替换</span></span><br><span class="line">viewStub.setVisibility(View.VISIBLE);   </span><br><span class="line"><span class="comment">// 获取展开后的布局</span></span><br><span class="line">mNetErrorView =  findViewById(R.id.network_unreachble);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>减少不必要的<code>Inflate</code><br>  如上一步中<code>stub.infalte()</code>后将该<code>View</code>进行记录或者是<code>ListView</code>中<code>item inflate</code>的时候。</p>
+</li>
+</ul>
+
+      
+    </div>
+    
+
+    
+    
+
+    <footer class="article-footer">
+      <a data-url="http://qianzui.github.io/2014/01/12/2014-01-12-Android布局优化/" data-id="cijbbyu8d0007dvn733wkk32o" class="article-share-link">分享到</a>
+      
+        <a href="http://qianzui.github.io/2014/01/12/2014-01-12-Android布局优化/#ds-thread" class="article-comment-link">评论</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/布局优化/">布局优化</a></li></ul>
 
     </footer>
   </div>
@@ -280,7 +305,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://qianzui.github.io/2013/07/18/2013-07-18-面向对象六大原则/" data-id="cijbbwuqu00080sn7poqxrb75" class="article-share-link">分享到</a>
+      <a data-url="http://qianzui.github.io/2013/07/18/2013-07-18-面向对象六大原则/" data-id="cijbbyu8f000bdvn7srxjfvmu" class="article-share-link">分享到</a>
       
         <a href="http://qianzui.github.io/2013/07/18/2013-07-18-面向对象六大原则/#ds-thread" class="article-comment-link">评论</a>
       
@@ -308,9 +333,9 @@
           <li>
             
             <div class="item-inner">
-              <p class="item-category"></p>
-              <p class="item-title"><a href="/2016/01/12/2014-01-12-Android布局优化/" class="title"></a></p>
-              <p class="item-date"><time datetime="2016-01-12T11:42:15.000Z" itemprop="datePublished">2016-01-12</time></p>
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2014/05/22/2014-05-22-android-gson/" class="title">Android Gson</a></p>
+              <p class="item-date"><time datetime="2014-05-22T13:13:04.000Z" itemprop="datePublished">2014-05-22</time></p>
             </div>
           </li>
         
@@ -318,8 +343,8 @@
             
             <div class="item-inner">
               <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
-              <p class="item-title"><a href="/2014/05/22/2014-05-22-android-gson/" class="title">Android Gson</a></p>
-              <p class="item-date"><time datetime="2014-05-22T13:13:04.000Z" itemprop="datePublished">2014-05-22</time></p>
+              <p class="item-title"><a href="/2014/01/12/2014-01-12-Android布局优化/" class="title">Android布局优化</a></p>
+              <p class="item-date"><time datetime="2014-01-12T14:33:07.000Z" itemprop="datePublished">2014-01-12</time></p>
             </div>
           </li>
         
@@ -341,7 +366,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -350,7 +375,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gson/">Gson</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/面向对象/">面向对象</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gson/">Gson</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/布局优化/">布局优化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/面向对象/">面向对象</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -359,7 +384,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Gson/" style="font-size: 10px;">Gson</a> <a href="/tags/面向对象/" style="font-size: 10px;">面向对象</a>
+      <a href="/tags/Gson/" style="font-size: 10px;">Gson</a> <a href="/tags/布局优化/" style="font-size: 10px;">布局优化</a> <a href="/tags/面向对象/" style="font-size: 10px;">面向对象</a>
     </div>
   </div>
 
@@ -368,7 +393,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 

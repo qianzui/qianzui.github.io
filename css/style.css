@@ -1729,6 +1729,9 @@ pre .javascript .function {
     height: 36px;
     font-size: 24px;
     line-height: 36px;
+    background: #565a5f;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
   }
 }
 @media screen and (max-width: 559px) {
@@ -1737,6 +1740,9 @@ pre .javascript .function {
     height: 36px;
     font-size: 24px;
     line-height: 36px;
+    background: #565a5f;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
   }
 }
 #toTop.fix {

@@ -1725,18 +1725,18 @@ pre .javascript .function {
 }
 @media screen and (min-width: 560px) and (max-width: 799px) {
   #toTop {
-    width: 54px;
-    height: 54px;
-    font-size: 28px;
-    line-height: 54px;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 @media screen and (max-width: 559px) {
   #toTop {
-    width: 54px;
-    height: 54px;
-    font-size: 28px;
-    line-height: 54px;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 #toTop.fix {

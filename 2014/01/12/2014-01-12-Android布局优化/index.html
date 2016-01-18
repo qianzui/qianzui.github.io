@@ -13,10 +13,9 @@
 <meta property="og:url" content="http://qianzui.github.io/2014/01/12/2014-01-12-Android布局优化/index.html">
 <meta property="og:site_name" content="qianzui's blog">
 <meta property="og:description" content="Android布局优化">
-<meta property="og:image" content="http://qianzui.github.io/../../../../img/cpu.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/CharonChui/Pictures/master/merge_1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/CharonChui/Pictures/master/merge_2.png">
-<meta property="og:updated_time" content="2016-01-18T09:04:21.000Z">
+<meta property="og:updated_time" content="2016-01-18T12:29:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android布局优化">
 <meta name="twitter:description" content="Android布局优化">
@@ -163,7 +162,6 @@
 </li>
 </ul>
 <a id="more"></a>
-<p><img src="/../../../../img/cpu.png" alt="使用本地图片"></p>
 <ul>
 <li><p>使用<code>&lt;merge&gt;</code>标签<br>  <code>merge</code>可以有效的解决布局的层级关系。我们通过一个例子来说明一下：</p>
   <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">FrameLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">	<span class="attribute">android:layout_width</span>=<span class="value">"fill_parent"</span></span><br><span class="line">	<span class="attribute">android:layout_height</span>=<span class="value">"fill_parent"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">ImageView</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"fill_parent"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"fill_parent"</span></span><br><span class="line"></span><br><span class="line">		<span class="attribute">android:scaleType</span>=<span class="value">"center"</span></span><br><span class="line">		<span class="attribute">android:src</span>=<span class="value">"@drawable/ic_launcher"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">TextView</span></span><br><span class="line">		<span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></span><br><span class="line">		<span class="attribute">android:layout_marginBottom</span>=<span class="value">"20dip"</span></span><br><span class="line">		<span class="attribute">android:textSize</span>=<span class="value">"22sp"</span></span><br><span class="line">		<span class="attribute">android:textColor</span>=<span class="value">"#990000"</span></span><br><span class="line">		<span class="attribute">android:layout_gravity</span>=<span class="value">"center_horizontal|bottom"</span></span><br><span class="line">		<span class="attribute">android:text</span>=<span class="value">"TEST"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">FrameLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -190,7 +188,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://qianzui.github.io/2014/01/12/2014-01-12-Android布局优化/" data-id="cijjy2vh3000d12n76c9ll1s0" class="article-share-link">分享到</a>
+      <a data-url="http://qianzui.github.io/2014/01/12/2014-01-12-Android布局优化/" data-id="cijjy9o4i000dfon7isc7ocs6" class="article-share-link">分享到</a>
       
         <a href="http://qianzui.github.io/2014/01/12/2014-01-12-Android布局优化/#ds-thread" class="article-comment-link">评论</a>
       

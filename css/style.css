@@ -129,7 +129,7 @@ a:visited {
   color: #38b7ea;
 }
 .outer {
-  max-width: 1420px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -149,8 +149,8 @@ a:visited {
 .inner {
   display: inline;
   float: left;
-  width: 98.57142857142858%;
-  margin: 0 0.714285714285714%;
+  width: 98.46153846153847%;
+  margin: 0 0.769230769230769%;
 }
 .left,
 .alignleft {
@@ -179,16 +179,16 @@ a:visited {
   #main {
     display: inline;
     float: left;
-    width: 62.857142857142854%;
-    margin: 0 0.714285714285714%;
+    width: 52.307692307692314%;
+    margin: 0 0.769230769230769%;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
   #main {
     display: inline;
     float: left;
-    width: 77.14285714285715%;
-    margin: 0 0.714285714285714%;
+    width: 67.6923076923077%;
+    margin: 0 0.769230769230769%;
   }
 }
 .article-date,
@@ -326,9 +326,9 @@ a:visited {
 #main-nav,
 #sub-nav,
 #search-form-wrap {
-  height: 32px;
-  line-height: 32px;
-  padding: 16px 15px;
+  height: 40px;
+  line-height: 40px;
+  padding: 12px 15px;
 }
 .header-inner #logo,
 #main-nav {
@@ -347,8 +347,8 @@ a:visited {
 }
 .header-inner #logo .logo {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   margin-right: 5px;
 }
 .header-inner #logo .site-title {
@@ -359,11 +359,11 @@ a:visited {
 }
 #header-title {
   text-align: center;
-  height: 32px;
+  height: 40px;
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -16px;
+  margin-top: -20px;
 }
 .header-sub {
   border-top: 1px solid #96c4dc;
@@ -434,8 +434,8 @@ a:visited {
   height: 100%;
   position: relative;
   cursor: pointer;
-  height: 32px !important;
-  line-height: 32px !important;
+  height: 40px !important;
+  line-height: 40px !important;
 }
 .main-nav-link {
   font-weight: 300;
@@ -447,8 +447,8 @@ a:visited {
 }
 #sub-nav #profile-nav #profile-anchor {
   display: block;
-  height: 32px;
-  line-height: 32px;
+  height: 40px;
+  line-height: 40px;
 }
 #sub-nav #profile-nav #profile-anchor:before,
 #sub-nav #profile-nav #profile-anchor:after {
@@ -463,12 +463,12 @@ a:visited {
   float: left;
 }
 #sub-nav #profile-nav .avatar {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   margin-right: 8px;
 }
 #sub-nav #profile-nav .fa {
-  line-height: 32px;
+  line-height: 40px;
 }
 @media screen and (max-width: 559px) {
   #search-form-wrap {
@@ -480,11 +480,11 @@ a:visited {
 }
 #search-form-wrap .search-form .search-form-input {
   width: 100%;
-  height: 32px;
+  height: 40px;
   padding: 0 30px 0 10px;
-  line-height: 32px;
-  -webkit-border-radius: 17px;
-  border-radius: 17px;
+  line-height: 40px;
+  -webkit-border-radius: 21px;
+  border-radius: 21px;
 }
 #search-form-wrap .search-form .search-form-input::-webkit-search-results-decoration,
 #search-form-wrap .search-form .search-form-input::-webkit-search-cancel-button {
@@ -580,8 +580,8 @@ a:visited {
     display: block;
     display: inline;
     float: left;
-    width: 20%;
-    margin: 0 0.714285714285714%;
+    width: 21.53846153846154%;
+    margin: 0 0.769230769230769%;
   }
 }
 #profile .inner {
@@ -1574,16 +1574,16 @@ pre .javascript .function {
   #sidebar {
     display: inline;
     float: left;
-    width: 12.857142857142856%;
-    margin: 0 0.714285714285714%;
+    width: 21.53846153846154%;
+    margin: 0 0.769230769230769%;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
   #sidebar {
     display: inline;
     float: left;
-    width: 27.142857142857142%;
-    margin: 0 0.714285714285714%;
+    width: 29.230769230769234%;
+    margin: 0 0.769230769230769%;
   }
 }
 .widget {

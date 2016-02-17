@@ -1007,6 +1007,19 @@ a.article-title:hover {
   #article-nav {
     margin: 40px 0;
   }
+  #article-nav:before {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -4px;
+    margin-left: -4px;
+    content: "";
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #787c81;
+  }
 }
 .article-nav-link-wrap {
   text-decoration: none;

@@ -1018,7 +1018,6 @@ a.article-title:hover {
     content: "";
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #787c81;
   }
 }
 .article-nav-link-wrap {
@@ -1036,7 +1035,6 @@ a.article-title:hover {
 }
 @media screen and (min-width: 1200px) {
   .article-nav-link-wrap {
-    width: 50%;
     margin-top: 0;
   }
 }

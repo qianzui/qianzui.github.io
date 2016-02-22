@@ -85,11 +85,11 @@
   	</div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        4
+        5
         <span>文章</span>
       </div>
       <div class="article-info-block">
-        7
+        9
         <span>标签</span>
       </div>
     </div>
@@ -164,7 +164,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://qianzui.github.io/blog/2015/10/03/根据URL生成缓存key算法/" data-id="ciktn0cnm0002f0n7b4vhh0cx" class="article-share-link">分享到</a>
+      <a data-url="http://qianzui.github.io/blog/2015/10/03/根据URL生成缓存key算法/" data-id="cikxrswq60002con7l81x60bo" class="article-share-link">分享到</a>
       
         <a href="http://qianzui.github.io/blog/2015/10/03/根据URL生成缓存key算法/#ds-thread" class="article-comment-link">评论</a>
       
@@ -234,7 +234,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://qianzui.github.io/blog/2014/01/12/Android布局优化/" data-id="ciktn0cnr000df0n7o3tjsnnt" class="article-share-link">分享到</a>
+      <a data-url="http://qianzui.github.io/blog/2014/01/12/Android布局优化/" data-id="cikxrswqc000dcon751jih06u" class="article-share-link">分享到</a>
       
         <a href="http://qianzui.github.io/blog/2014/01/12/Android布局优化/#ds-thread" class="article-comment-link">评论</a>
       
@@ -295,7 +295,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://qianzui.github.io/blog/2013/07/18/面向对象六大原则/" data-id="ciktn0cnt000hf0n7w63vxae8" class="article-share-link">分享到</a>
+      <a data-url="http://qianzui.github.io/blog/2013/07/18/面向对象六大原则/" data-id="cikxrswqe000hcon7cu3asie1" class="article-share-link">分享到</a>
       
         <a href="http://qianzui.github.io/blog/2013/07/18/面向对象六大原则/#ds-thread" class="article-comment-link">评论</a>
       
@@ -356,12 +356,72 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://qianzui.github.io/blog/2012/07/22/android-gson/" data-id="ciktn0cnv000mf0n7vvtx54rt" class="article-share-link">分享到</a>
+      <a data-url="http://qianzui.github.io/blog/2012/07/22/android-gson/" data-id="cikxrswqk000mcon76j4jt0u1" class="article-share-link">分享到</a>
       
         <a href="http://qianzui.github.io/blog/2012/07/22/android-gson/#ds-thread" class="article-comment-link">评论</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gson/">Gson</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  <article id="post-单例模式的正确写法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2012/05/01/单例模式的正确写法/">单例模式的正确写法</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          <div class="article-date">
+  <i class="fa fa-calendar"></i>
+  <a href="/blog/2012/05/01/单例模式的正确写法/">
+    <time datetime="2012-05-01T14:13:04.000Z" itemprop="datePublished">2012-05-01</time>
+  </a>
+</div>
+          
+  <div class="article-category">
+  	<i class="fa fa-folder"></i>
+    <a class="article-category-link" href="/categories/设计模式/">设计模式</a>
+  </div>
+
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>单例模式应该是最简单、最容易理解的设计模式了。即保证一个类只有一个实例，并提供一个访问它的全局访问点。单例模式在各种开源项目中经常见到，但是其中涉及到的知识点并不少，所以经常拿来当面试题来考。本文主要梳理一下常见单例模式的写法，以及其优缺点。</p>
+<h2 id="u61D2_u6C49_u5F0F_uFF0C_u7EBF_u7A0B_u4E0D_u5B89_u5168"><a href="#u61D2_u6C49_u5F0F_uFF0C_u7EBF_u7A0B_u4E0D_u5B89_u5168" class="headerlink" title="懒汉式，线程不安全"></a>懒汉式，线程不安全</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">     <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">         instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这是单例模式最常见的写法了，首先构造方法私有化，防止外部直接new一个该类的实例，然后提供一个全局的访问入口方法，在该方法中检查、实例化该类。采用懒汉式，需要用到该类实例的时候才会new。但是这种实现最大的问题是不支持多线程，因为getInstance()方法没有加锁，所以当多个线程调用getInstance()方法时就会产生多个实例。</p>
+        
+          <p class="article-more-link">
+            <a href="/blog/2012/05/01/单例模式的正确写法/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    
+
+    
+    
+
+    <footer class="article-footer">
+      <a data-url="http://qianzui.github.io/blog/2012/05/01/单例模式的正确写法/" data-id="cikxrswqm000qcon71kqhbbdv" class="article-share-link">分享到</a>
+      
+        <a href="http://qianzui.github.io/blog/2012/05/01/单例模式的正确写法/#ds-thread" class="article-comment-link">评论</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Singleton/">Singleton</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/单例模式/">单例模式</a></li></ul>
 
     </footer>
   </div>
@@ -417,6 +477,15 @@
             </div>
           </li>
         
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/设计模式/">设计模式</a></p>
+              <p class="item-title"><a href="/blog/2012/05/01/单例模式的正确写法/" class="title">单例模式的正确写法</a></p>
+              <p class="item-date"><time datetime="2012-05-01T14:13:04.000Z" itemprop="datePublished">2012-05-01</time></p>
+            </div>
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -426,7 +495,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/设计模式/">设计模式</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -435,7 +504,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gson/">Gson</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cache/">cache</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/okhttp/">okhttp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/picasso/">picasso</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/volley/">volley</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/布局优化/">布局优化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/面向对象/">面向对象</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gson/">Gson</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Singleton/">Singleton</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cache/">cache</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/okhttp/">okhttp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/picasso/">picasso</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/volley/">volley</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/单例模式/">单例模式</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/布局优化/">布局优化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/面向对象/">面向对象</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -444,7 +513,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/07/">七月 2012</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/07/">七月 2012</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/05/">五月 2012</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 

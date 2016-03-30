@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
-Allow: /blog
+Allow: /blog/
+Allow: /tags/
 Allow: /archives/
 Allow: /categories/
 Allow: /about/
@@ -11,4 +12,7 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
+
+Sitemap: http://qianzui.github.io/sitemap.xml
+Sitemap: http://qianzui.github.io/baidusitemap.xml
 

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qianzui.github.io/blog/2013-03-15-binarySearch/</loc>
+    
+    <lastmod>2016-03-31T15:21:16.412Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qianzui.github.io/404.html</loc>
     
     <lastmod>2016-03-30T11:57:07.059Z</lastmod>

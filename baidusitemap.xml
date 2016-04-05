@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
+    <lastmod>2016-04-05T11:04:37.512Z</lastmod>
+    <data>
+        <display>
+        <title>Picasso源码解析</title>
+        <pubTime>2014-02-14T14:51:27.000Z</pubTime>
+        
+        <tag>Picasso</tag>
+         
+        <tag>源码解析</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarysearch/</loc>
+    <lastmod>2016-04-05T11:04:00.776Z</lastmod>
+    <data>
+        <display>
+        <title>如何正确的写出二分查找</title>
+        <pubTime>2013-03-15T03:18:04.000Z</pubTime>
+        
+        <tag>二分查找</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2015-10-03-generate-key-from-url/</loc>
     <lastmod>2016-04-01T02:52:52.644Z</lastmod>
     <data>
@@ -68,28 +110,6 @@
 
     
   <url>
-    <loc>http://qianzui.github.io/blog/2014-02-14-Picasso-source-code-analysis/</loc>
-    <lastmod>2016-04-01T02:48:40.864Z</lastmod>
-    <data>
-        <display>
-        <title>Picasso源码解析</title>
-        <pubTime>2014-02-14T14:51:27.000Z</pubTime>
-        
-        <tag>Picasso</tag>
-         
-        <tag>源码解析</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://qianzui.github.io/blog/2014-01-12-android-optimise-layout/</loc>
     <lastmod>2016-04-01T02:48:28.224Z</lastmod>
     <data>
@@ -123,26 +143,6 @@
            
              
               <breadCrumb title="Java" url="http://qianzui.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarySearch/</loc>
-    <lastmod>2016-04-01T02:47:19.088Z</lastmod>
-    <data>
-        <display>
-        <title>如何正确地写出二分查找</title>
-        <pubTime>2013-03-15T03:18:04.000Z</pubTime>
-        
-        <tag>二分查找</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
           
         </display>
     </data>

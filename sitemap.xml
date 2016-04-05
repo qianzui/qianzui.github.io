@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
+    
+    <lastmod>2016-04-05T11:04:37.512Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarysearch/</loc>
+    
+    <lastmod>2016-04-05T11:04:00.776Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qianzui.github.io/blog/2015-10-03-generate-key-from-url/</loc>
     
     <lastmod>2016-04-01T02:52:52.644Z</lastmod>
@@ -23,13 +37,6 @@
   </url>
   
   <url>
-    <loc>http://qianzui.github.io/blog/2014-02-14-Picasso-source-code-analysis/</loc>
-    
-    <lastmod>2016-04-01T02:48:40.864Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://qianzui.github.io/blog/2014-01-12-android-optimise-layout/</loc>
     
     <lastmod>2016-04-01T02:48:28.224Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://qianzui.github.io/blog/2013-07-18-oop-principle/</loc>
     
     <lastmod>2016-04-01T02:48:16.508Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarySearch/</loc>
-    
-    <lastmod>2016-04-01T02:47:19.088Z</lastmod>
     
   </url>
   

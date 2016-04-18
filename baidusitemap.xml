@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2013-04-17-use-httpurlconnection-implements-file-upload/</loc>
+    <lastmod>2016-04-18T12:48:51.172Z</lastmod>
+    <data>
+        <display>
+        <title>HttpURLConnection模拟HTTP文件上传</title>
+        <pubTime>2013-04-17T11:23:56.000Z</pubTime>
+        
+        <tag>Http</tag>
+         
+        <tag>POST</tag>
+         
+        <tag>file upload</tag>
+         
+         
+           
+             
+              <breadCrumb title="Http" url="http://qianzui.github.io/categories/Http/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
     <lastmod>2016-04-05T11:04:37.512Z</lastmod>
     <data>

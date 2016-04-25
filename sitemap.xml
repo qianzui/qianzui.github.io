@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qianzui.github.io/blog/2016-03-18-android-calculator-source-code-analysis/</loc>
+    
+    <lastmod>2016-04-25T12:01:23.419Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qianzui.github.io/blog/2013-04-17-use-httpurlconnection-implements-file-upload/</loc>
     
     <lastmod>2016-04-18T12:48:51.172Z</lastmod>

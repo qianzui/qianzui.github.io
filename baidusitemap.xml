@@ -4,16 +4,76 @@
 
     
   <url>
-    <loc>http://qianzui.github.io/blog/2016-03-18-android-calculator-source-code-analysis/</loc>
-    <lastmod>2016-04-25T12:01:23.419Z</lastmod>
+    <loc>http://qianzui.github.io/blog/2013-07-18-learn-oop-principle-from-volley/</loc>
+    <lastmod>2016-04-25T12:26:05.583Z</lastmod>
     <data>
         <display>
-        <title>Android原生计算器源码分析</title>
-        <pubTime>2016-03-18T15:51:27.000Z</pubTime>
+        <title>从Volley看面向对象六大原则</title>
+        <pubTime>2013-07-18T14:11:34.000Z</pubTime>
         
-        <tag>源码解析</tag>
+        <tag>面向对象</tag>
          
-        <tag>计算器</tag>
+        <tag>Volley</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qianzui.github.io/blog/2012-05-01-how-to-correctly-write-singleton-pattern/</loc>
+    <lastmod>2016-04-25T12:12:20.027Z</lastmod>
+    <data>
+        <display>
+        <title>单例模式的正确写法</title>
+        <pubTime>2012-05-01T14:13:04.000Z</pubTime>
+        
+        <tag>单例模式</tag>
+         
+         
+           
+             
+              <breadCrumb title="设计模式" url="http://qianzui.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qianzui.github.io/blog/2012-07-22-how-to-use-gson-on-android-platform/</loc>
+    <lastmod>2016-04-25T12:11:54.171Z</lastmod>
+    <data>
+        <display>
+        <title>Android Gson</title>
+        <pubTime>2012-07-22T13:13:04.000Z</pubTime>
+        
+        <tag>Gson</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarysearch/</loc>
+    <lastmod>2016-04-25T12:10:41.423Z</lastmod>
+    <data>
+        <display>
+        <title>如何正确的写出二分查找</title>
+        <pubTime>2013-03-15T03:18:04.000Z</pubTime>
+        
+        <tag>二分查找</tag>
          
          
            
@@ -27,10 +87,10 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2013-04-17-use-httpurlconnection-implements-file-upload/</loc>
-    <lastmod>2016-04-18T12:48:51.172Z</lastmod>
+    <lastmod>2016-04-25T12:10:15.707Z</lastmod>
     <data>
         <display>
-        <title>HttpURLConnection模拟HTTP文件上传</title>
+        <title>HttpURLConnection实现HTTP文件上传</title>
         <pubTime>2013-04-17T11:23:56.000Z</pubTime>
         
         <tag>Http</tag>
@@ -43,6 +103,28 @@
            
              
               <breadCrumb title="Http" url="http://qianzui.github.io/categories/Http/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qianzui.github.io/blog/2016-03-28-android-calculator-source-code-analysis/</loc>
+    <lastmod>2016-04-25T12:09:32.215Z</lastmod>
+    <data>
+        <display>
+        <title>Android原生计算器源码分析</title>
+        <pubTime>2016-03-28T15:51:27.000Z</pubTime>
+        
+        <tag>源码解析</tag>
+         
+        <tag>计算器</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
           
         </display>
     </data>
@@ -72,26 +154,6 @@
 
     
   <url>
-    <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarysearch/</loc>
-    <lastmod>2016-04-05T11:04:00.776Z</lastmod>
-    <data>
-        <display>
-        <title>如何正确的写出二分查找</title>
-        <pubTime>2013-03-15T03:18:04.000Z</pubTime>
-        
-        <tag>二分查找</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://qianzui.github.io/blog/2015-10-03-generate-key-from-url/</loc>
     <lastmod>2016-04-01T02:52:52.644Z</lastmod>
     <data>
@@ -99,9 +161,9 @@
         <title>根据URL生成缓存key算法</title>
         <pubTime>2015-10-03T15:13:04.000Z</pubTime>
         
-        <tag>Picasso</tag>
-         
         <tag>Volley</tag>
+         
+        <tag>Picasso</tag>
          
         <tag>OkHttp</tag>
          
@@ -169,66 +231,6 @@
            
              
               <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2013-07-18-oop-principle/</loc>
-    <lastmod>2016-04-01T02:48:16.508Z</lastmod>
-    <data>
-        <display>
-        <title>面向对象六大原则</title>
-        <pubTime>2013-07-18T14:11:34.000Z</pubTime>
-        
-        <tag>面向对象</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="http://qianzui.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2012-07-22-how-to-use-gson-on-android-platform/</loc>
-    <lastmod>2016-04-01T02:47:09.820Z</lastmod>
-    <data>
-        <display>
-        <title>Android Gson</title>
-        <pubTime>2012-07-22T13:13:04.000Z</pubTime>
-        
-        <tag>Gson</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2012-05-01-how-to-correctly-write-singleton-pattern/</loc>
-    <lastmod>2016-04-01T02:47:01.000Z</lastmod>
-    <data>
-        <display>
-        <title>单例模式的正确写法</title>
-        <pubTime>2012-05-01T14:13:04.000Z</pubTime>
-        
-        <tag>单例模式</tag>
-         
-         
-           
-             
-              <breadCrumb title="设计模式" url="http://qianzui.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
           
         </display>
     </data>

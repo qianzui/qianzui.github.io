@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://qianzui.github.io/blog/2016-03-18-android-calculator-source-code-analysis/</loc>
+    <loc>http://qianzui.github.io/blog/2013-07-18-learn-oop-principle-from-volley/</loc>
     
-    <lastmod>2016-04-25T12:01:23.419Z</lastmod>
+    <lastmod>2016-04-25T12:26:05.583Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qianzui.github.io/blog/2012-05-01-how-to-correctly-write-singleton-pattern/</loc>
+    
+    <lastmod>2016-04-25T12:12:20.027Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qianzui.github.io/blog/2012-07-22-how-to-use-gson-on-android-platform/</loc>
+    
+    <lastmod>2016-04-25T12:11:54.171Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarysearch/</loc>
+    
+    <lastmod>2016-04-25T12:10:41.423Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://qianzui.github.io/blog/2013-04-17-use-httpurlconnection-implements-file-upload/</loc>
     
-    <lastmod>2016-04-18T12:48:51.172Z</lastmod>
+    <lastmod>2016-04-25T12:10:15.707Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qianzui.github.io/blog/2016-03-28-android-calculator-source-code-analysis/</loc>
+    
+    <lastmod>2016-04-25T12:09:32.215Z</lastmod>
     
   </url>
   
@@ -19,13 +47,6 @@
     <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
     
     <lastmod>2016-04-05T11:04:37.512Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarysearch/</loc>
-    
-    <lastmod>2016-04-05T11:04:00.776Z</lastmod>
     
   </url>
   
@@ -54,27 +75,6 @@
     <loc>http://qianzui.github.io/blog/2014-01-12-android-optimise-layout/</loc>
     
     <lastmod>2016-04-01T02:48:28.224Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qianzui.github.io/blog/2013-07-18-oop-principle/</loc>
-    
-    <lastmod>2016-04-01T02:48:16.508Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qianzui.github.io/blog/2012-07-22-how-to-use-gson-on-android-platform/</loc>
-    
-    <lastmod>2016-04-01T02:47:09.820Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qianzui.github.io/blog/2012-05-01-how-to-correctly-write-singleton-pattern/</loc>
-    
-    <lastmod>2016-04-01T02:47:01.000Z</lastmod>
     
   </url>
   

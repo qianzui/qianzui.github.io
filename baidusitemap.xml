@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2012-12-28-quick-sort/</loc>
+    <lastmod>2016-04-28T09:57:42.007Z</lastmod>
+    <data>
+        <display>
+        <title>快速排序</title>
+        <pubTime>2012-12-28T12:23:21.000Z</pubTime>
+        
+        <tag>快速排序</tag>
+         
+         
+           
+             
+              <breadCrumb title="算法" url="http://qianzui.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarysearch/</loc>
+    <lastmod>2016-04-28T09:31:57.555Z</lastmod>
+    <data>
+        <display>
+        <title>如何正确的写出二分查找</title>
+        <pubTime>2013-03-15T03:18:04.000Z</pubTime>
+        
+        <tag>二分查找</tag>
+         
+         
+           
+             
+              <breadCrumb title="算法" url="http://qianzui.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2013-12-13-script-to-update-git-project/</loc>
     <lastmod>2016-04-25T12:37:14.275Z</lastmod>
     <data>
@@ -74,26 +114,6 @@
         <pubTime>2012-07-22T13:13:04.000Z</pubTime>
         
         <tag>Gson</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarysearch/</loc>
-    <lastmod>2016-04-25T12:10:41.423Z</lastmod>
-    <data>
-        <display>
-        <title>如何正确的写出二分查找</title>
-        <pubTime>2013-03-15T03:18:04.000Z</pubTime>
-        
-        <tag>二分查找</tag>
          
          
            

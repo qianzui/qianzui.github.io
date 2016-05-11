@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2015-10-03-generate-key-from-url/</loc>
+    <lastmod>2016-05-11T13:43:12.792Z</lastmod>
+    <data>
+        <display>
+        <title>根据URL生成缓存key算法</title>
+        <pubTime>2015-10-03T15:13:04.000Z</pubTime>
+        
+        <tag>Volley</tag>
+         
+        <tag>Picasso</tag>
+         
+        <tag>OkHttp</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2012-12-28-quick-sort/</loc>
     <lastmod>2016-04-28T09:59:38.863Z</lastmod>
     <data>
@@ -182,30 +206,6 @@
         <tag>Picasso</tag>
          
         <tag>源码解析</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2015-10-03-generate-key-from-url/</loc>
-    <lastmod>2016-04-01T02:52:52.644Z</lastmod>
-    <data>
-        <display>
-        <title>根据URL生成缓存key算法</title>
-        <pubTime>2015-10-03T15:13:04.000Z</pubTime>
-        
-        <tag>Volley</tag>
-         
-        <tag>Picasso</tag>
-         
-        <tag>OkHttp</tag>
          
          
            

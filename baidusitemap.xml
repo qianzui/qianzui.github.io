@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
-    <lastmod>2016-05-18T08:33:31.179Z</lastmod>
+    <lastmod>2016-05-18T10:00:44.991Z</lastmod>
     <data>
         <display>
         <title>Volley对HTTP缓存的处理</title>
@@ -35,9 +35,9 @@
         <title>根据URL生成缓存key算法</title>
         <pubTime>2015-10-03T15:13:04.000Z</pubTime>
         
-        <tag>Picasso</tag>
-         
         <tag>Volley</tag>
+         
+        <tag>Picasso</tag>
          
         <tag>OkHttp</tag>
          
@@ -119,9 +119,9 @@
         <title>从Volley看面向对象六大原则</title>
         <pubTime>2013-07-18T14:11:34.000Z</pubTime>
         
-        <tag>Volley</tag>
-         
         <tag>面向对象</tag>
+         
+        <tag>Volley</tag>
          
          
            

@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2014-04-21-why-volley-request-twice/</loc>
+    <lastmod>2016-05-18T14:03:34.595Z</lastmod>
+    <data>
+        <display>
+        <title>Volley默认请求多次原因解析</title>
+        <pubTime>2014-04-21T12:17:27.000Z</pubTime>
+        
+        <tag>Volley</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
     <lastmod>2016-05-18T10:00:44.991Z</lastmod>
     <data>
@@ -230,26 +250,6 @@
         <tag>Picasso</tag>
          
         <tag>源码解析</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2014-04-21-why-volley-request-twice/</loc>
-    <lastmod>2016-04-01T02:48:53.528Z</lastmod>
-    <data>
-        <display>
-        <title>Volley默认请求多次原因解析</title>
-        <pubTime>2014-04-21T12:17:27.000Z</pubTime>
-        
-        <tag>Volley</tag>
          
          
            

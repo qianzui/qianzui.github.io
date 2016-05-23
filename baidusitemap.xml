@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
+    <lastmod>2016-05-23T13:33:09.833Z</lastmod>
+    <data>
+        <display>
+        <title>Picasso源码解析</title>
+        <pubTime>2014-02-14T14:51:27.000Z</pubTime>
+        
+        <tag>Picasso</tag>
+         
+        <tag>源码解析</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2014-04-21-why-volley-request-twice/</loc>
     <lastmod>2016-05-18T14:03:34.595Z</lastmod>
     <data>
@@ -55,9 +77,9 @@
         <title>根据URL生成缓存key算法</title>
         <pubTime>2015-10-03T15:13:04.000Z</pubTime>
         
-        <tag>Volley</tag>
-         
         <tag>Picasso</tag>
+         
+        <tag>Volley</tag>
          
         <tag>OkHttp</tag>
          
@@ -139,9 +161,9 @@
         <title>从Volley看面向对象六大原则</title>
         <pubTime>2013-07-18T14:11:34.000Z</pubTime>
         
-        <tag>面向对象</tag>
-         
         <tag>Volley</tag>
+         
+        <tag>面向对象</tag>
          
          
            
@@ -228,28 +250,6 @@
         <tag>源码解析</tag>
          
         <tag>计算器</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
-    <lastmod>2016-04-05T11:04:37.512Z</lastmod>
-    <data>
-        <display>
-        <title>Picasso源码解析</title>
-        <pubTime>2014-02-14T14:51:27.000Z</pubTime>
-        
-        <tag>Picasso</tag>
-         
-        <tag>源码解析</tag>
          
          
            

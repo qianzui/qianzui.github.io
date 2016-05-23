@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
+    
+    <lastmod>2016-05-23T13:33:09.833Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qianzui.github.io/blog/2014-04-21-why-volley-request-twice/</loc>
     
     <lastmod>2016-05-18T14:03:34.595Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>http://qianzui.github.io/blog/2016-03-28-android-calculator-source-code-analysis/</loc>
     
     <lastmod>2016-04-25T12:09:32.215Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
-    
-    <lastmod>2016-04-05T11:04:37.512Z</lastmod>
     
   </url>
   

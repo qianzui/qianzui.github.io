@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2014-02-14-httpresponsecache-source-code-analysis/</loc>
+    <lastmod>2016-05-24T14:58:10.122Z</lastmod>
+    <data>
+        <display>
+        <title>HttpResponseCache原理分析</title>
+        <pubTime>2014-02-14T14:51:27.000Z</pubTime>
+        
+        <tag>源码解析</tag>
+         
+        <tag>HttpResponseCache</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
     <lastmod>2016-05-24T12:10:22.650Z</lastmod>
     <data>

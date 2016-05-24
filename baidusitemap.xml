@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
-    <lastmod>2016-05-24T03:48:32.439Z</lastmod>
+    <lastmod>2016-05-24T11:56:43.778Z</lastmod>
     <data>
         <display>
         <title>Picasso源码解析</title>
@@ -19,6 +19,46 @@
            
              
               <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qianzui.github.io/blog/2014-01-12-android-optimise-layout/</loc>
+    <lastmod>2016-05-24T09:15:45.242Z</lastmod>
+    <data>
+        <display>
+        <title>Android布局优化</title>
+        <pubTime>2014-01-12T14:33:07.000Z</pubTime>
+        
+        <tag>布局优化</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qianzui.github.io/blog/2013-12-13-script-to-update-git-project/</loc>
+    <lastmod>2016-05-24T09:08:28.886Z</lastmod>
+    <data>
+        <display>
+        <title>批量更新Git项目脚本</title>
+        <pubTime>2013-12-13T08:33:29.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://qianzui.github.io/categories/Git/"/>
           
         </display>
     </data>
@@ -77,9 +117,9 @@
         <title>根据URL生成缓存key算法</title>
         <pubTime>2015-10-03T15:13:04.000Z</pubTime>
         
-        <tag>Volley</tag>
-         
         <tag>Picasso</tag>
+         
+        <tag>Volley</tag>
          
         <tag>OkHttp</tag>
          
@@ -134,26 +174,6 @@
 
     
   <url>
-    <loc>http://qianzui.github.io/blog/2013-12-13-script-to-update-git-project/</loc>
-    <lastmod>2016-04-25T12:37:14.275Z</lastmod>
-    <data>
-        <display>
-        <title>批量更新Git项目脚本</title>
-        <pubTime>2013-12-13T08:33:29.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="http://qianzui.github.io/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://qianzui.github.io/blog/2013-07-18-learn-oop-principle-from-volley/</loc>
     <lastmod>2016-04-25T12:26:05.583Z</lastmod>
     <data>
@@ -161,9 +181,9 @@
         <title>从Volley看面向对象六大原则</title>
         <pubTime>2013-07-18T14:11:34.000Z</pubTime>
         
-        <tag>面向对象</tag>
-         
         <tag>Volley</tag>
+         
+        <tag>面向对象</tag>
          
          
            
@@ -270,26 +290,6 @@
         <pubTime>2014-05-25T11:58:37.000Z</pubTime>
         
         <tag>TinyPNG</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2014-01-12-android-optimise-layout/</loc>
-    <lastmod>2016-04-01T02:48:28.224Z</lastmod>
-    <data>
-        <display>
-        <title>Android布局优化</title>
-        <pubTime>2014-01-12T14:33:07.000Z</pubTime>
-        
-        <tag>布局优化</tag>
          
          
            

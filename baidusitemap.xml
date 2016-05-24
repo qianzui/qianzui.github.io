@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
-    <lastmod>2016-05-23T13:33:09.833Z</lastmod>
+    <lastmod>2016-05-24T03:48:32.439Z</lastmod>
     <data>
         <display>
         <title>Picasso源码解析</title>
@@ -77,9 +77,9 @@
         <title>根据URL生成缓存key算法</title>
         <pubTime>2015-10-03T15:13:04.000Z</pubTime>
         
-        <tag>Picasso</tag>
-         
         <tag>Volley</tag>
+         
+        <tag>Picasso</tag>
          
         <tag>OkHttp</tag>
          
@@ -161,9 +161,9 @@
         <title>从Volley看面向对象六大原则</title>
         <pubTime>2013-07-18T14:11:34.000Z</pubTime>
         
-        <tag>Volley</tag>
-         
         <tag>面向对象</tag>
+         
+        <tag>Volley</tag>
          
          
            

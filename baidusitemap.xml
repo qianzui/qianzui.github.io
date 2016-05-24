@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
+    <lastmod>2016-05-24T12:10:22.650Z</lastmod>
+    <data>
+        <display>
+        <title>Volley对HTTP缓存的处理</title>
+        <pubTime>2014-07-23T11:11:31.000Z</pubTime>
+        
+        <tag>Http</tag>
+         
+        <tag>Volley</tag>
+         
+        <tag>Cache</tag>
+         
+         
+           
+             
+              <breadCrumb title="Http" url="http://qianzui.github.io/categories/Http/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
     <lastmod>2016-05-24T11:56:43.778Z</lastmod>
     <data>
@@ -86,30 +110,6 @@
 
     
   <url>
-    <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
-    <lastmod>2016-05-18T10:00:44.991Z</lastmod>
-    <data>
-        <display>
-        <title>Volley对HTTP缓存的处理</title>
-        <pubTime>2014-07-23T11:11:31.000Z</pubTime>
-        
-        <tag>Http</tag>
-         
-        <tag>Volley</tag>
-         
-        <tag>Cache</tag>
-         
-         
-           
-             
-              <breadCrumb title="Http" url="http://qianzui.github.io/categories/Http/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://qianzui.github.io/blog/2015-10-03-generate-key-from-url/</loc>
     <lastmod>2016-05-11T13:43:12.792Z</lastmod>
     <data>
@@ -117,9 +117,9 @@
         <title>根据URL生成缓存key算法</title>
         <pubTime>2015-10-03T15:13:04.000Z</pubTime>
         
-        <tag>Picasso</tag>
-         
         <tag>Volley</tag>
+         
+        <tag>Picasso</tag>
          
         <tag>OkHttp</tag>
          
@@ -181,9 +181,9 @@
         <title>从Volley看面向对象六大原则</title>
         <pubTime>2013-07-18T14:11:34.000Z</pubTime>
         
-        <tag>Volley</tag>
-         
         <tag>面向对象</tag>
+         
+        <tag>Volley</tag>
          
          
            

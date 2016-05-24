@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
+    
+    <lastmod>2016-05-24T12:10:22.650Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
     
     <lastmod>2016-05-24T11:56:43.778Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://qianzui.github.io/blog/2014-04-21-why-volley-request-twice/</loc>
     
     <lastmod>2016-05-18T14:03:34.595Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
-    
-    <lastmod>2016-05-18T10:00:44.991Z</lastmod>
     
   </url>
   

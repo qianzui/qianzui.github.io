@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://qianzui.github.io/blog/2014-02-14-httpresponsecache-source-code-analysis/</loc>
-    <lastmod>2016-05-24T14:58:10.122Z</lastmod>
+    <loc>http://qianzui.github.io/blog/2015-03-29-httpresponsecache-source-code-analysis/</loc>
+    <lastmod>2016-05-25T02:18:03.254Z</lastmod>
     <data>
         <display>
         <title>HttpResponseCache原理分析</title>
-        <pubTime>2014-02-14T14:51:27.000Z</pubTime>
+        <pubTime>2015-03-29T11:11:59.000Z</pubTime>
         
         <tag>源码解析</tag>
          

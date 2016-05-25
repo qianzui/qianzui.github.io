@@ -4,30 +4,8 @@
 
     
   <url>
-    <loc>http://qianzui.github.io/blog/2015-03-29-httpresponsecache-source-code-analysis/</loc>
-    <lastmod>2016-05-25T06:02:28.908Z</lastmod>
-    <data>
-        <display>
-        <title>HttpResponseCache原理分析</title>
-        <pubTime>2015-03-29T11:11:59.000Z</pubTime>
-        
-        <tag>源码解析</tag>
-         
-        <tag>HttpResponseCache</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
-    <lastmod>2016-05-24T12:10:22.650Z</lastmod>
+    <lastmod>2016-05-25T07:16:22.297Z</lastmod>
     <data>
         <display>
         <title>Volley对HTTP缓存的处理</title>
@@ -43,6 +21,28 @@
            
              
               <breadCrumb title="Http" url="http://qianzui.github.io/categories/Http/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qianzui.github.io/blog/2015-03-29-httpresponsecache-source-code-analysis/</loc>
+    <lastmod>2016-05-25T06:02:28.908Z</lastmod>
+    <data>
+        <display>
+        <title>HttpResponseCache原理分析</title>
+        <pubTime>2015-03-29T11:11:59.000Z</pubTime>
+        
+        <tag>源码解析</tag>
+         
+        <tag>HttpResponseCache</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
           
         </display>
     </data>

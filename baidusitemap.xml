@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2013-04-17-use-httpurlconnection-implements-file-upload/</loc>
+    <lastmod>2016-06-14T10:00:44.449Z</lastmod>
+    <data>
+        <display>
+        <title>HttpURLConnection实现HTTP文件上传</title>
+        <pubTime>2013-04-17T11:23:56.000Z</pubTime>
+        
+        <tag>Http</tag>
+         
+        <tag>POST</tag>
+         
+        <tag>file upload</tag>
+         
+         
+           
+             
+              <breadCrumb title="Http" url="http://qianzui.github.io/categories/Http/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
     <lastmod>2016-06-14T09:53:27.365Z</lastmod>
     <data>
@@ -251,30 +275,6 @@
            
              
               <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2013-04-17-use-httpurlconnection-implements-file-upload/</loc>
-    <lastmod>2016-04-25T12:10:15.707Z</lastmod>
-    <data>
-        <display>
-        <title>HttpURLConnection实现HTTP文件上传</title>
-        <pubTime>2013-04-17T11:23:56.000Z</pubTime>
-        
-        <tag>Http</tag>
-         
-        <tag>POST</tag>
-         
-        <tag>file upload</tag>
-         
-         
-           
-             
-              <breadCrumb title="Http" url="http://qianzui.github.io/categories/Http/"/>
           
         </display>
     </data>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qianzui.github.io/blog/2013-04-17-use-httpurlconnection-implements-file-upload/</loc>
+    
+    <lastmod>2016-06-14T10:00:44.449Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
     
     <lastmod>2016-06-14T09:53:27.365Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>http://qianzui.github.io/blog/2012-07-22-how-to-use-gson-on-android-platform/</loc>
     
     <lastmod>2016-04-25T12:11:54.171Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qianzui.github.io/blog/2013-04-17-use-httpurlconnection-implements-file-upload/</loc>
-    
-    <lastmod>2016-04-25T12:10:15.707Z</lastmod>
     
   </url>
   

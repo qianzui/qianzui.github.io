@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2016-05-20-awesome-android-tips/</loc>
+    <lastmod>2016-06-22T09:10:20.901Z</lastmod>
+    <data>
+        <display>
+        <title>Android开发中需要注意的点</title>
+        <pubTime>2016-05-20T12:21:57.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2013-04-17-use-httpurlconnection-implements-file-upload/</loc>
     <lastmod>2016-06-14T10:00:44.449Z</lastmod>
     <data>
@@ -79,9 +97,9 @@
         <title>HttpResponseCache原理分析</title>
         <pubTime>2015-03-29T11:11:59.000Z</pubTime>
         
-        <tag>源码解析</tag>
-         
         <tag>HttpResponseCache</tag>
+         
+        <tag>源码解析</tag>
          
          
            
@@ -101,9 +119,9 @@
         <title>Picasso源码解析</title>
         <pubTime>2014-02-14T14:51:27.000Z</pubTime>
         
-        <tag>Picasso</tag>
-         
         <tag>源码解析</tag>
+         
+        <tag>Picasso</tag>
          
          
            
@@ -185,9 +203,9 @@
         
         <tag>Volley</tag>
          
-        <tag>Picasso</tag>
-         
         <tag>OkHttp</tag>
+         
+        <tag>Picasso</tag>
          
          
            

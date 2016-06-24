@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2016-05-20-awesome-android-tips/</loc>
-    <lastmod>2016-06-22T09:58:57.469Z</lastmod>
+    <lastmod>2016-06-24T06:42:36.605Z</lastmod>
     <data>
         <display>
         <title>Android开发中需要注意的点</title>
@@ -201,9 +201,9 @@
         <title>根据URL生成缓存key算法</title>
         <pubTime>2015-10-03T15:13:04.000Z</pubTime>
         
-        <tag>Volley</tag>
-         
         <tag>Picasso</tag>
+         
+        <tag>Volley</tag>
          
         <tag>OkHttp</tag>
          
@@ -245,9 +245,9 @@
         <title>从Volley看面向对象六大原则</title>
         <pubTime>2013-07-18T14:11:34.000Z</pubTime>
         
-        <tag>面向对象</tag>
-         
         <tag>Volley</tag>
+         
+        <tag>面向对象</tag>
          
          
            

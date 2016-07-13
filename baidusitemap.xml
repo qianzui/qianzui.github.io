@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://qianzui.github.io/blog/2012-05-01-how-to-correctly-write-singleton-pattern/</loc>
+    <lastmod>2016-07-13T04:57:18.965Z</lastmod>
+    <data>
+        <display>
+        <title>单例模式的正确写法</title>
+        <pubTime>2012-05-01T14:13:04.000Z</pubTime>
+        
+        <tag>单例模式</tag>
+         
+         
+           
+             
+              <breadCrumb title="设计模式" url="http://qianzui.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qianzui.github.io/blog/2016-05-20-awesome-android-tips/</loc>
     <lastmod>2016-06-24T06:42:36.605Z</lastmod>
     <data>
@@ -53,9 +73,9 @@
         <title>Volley对HTTP缓存的处理</title>
         <pubTime>2014-07-23T11:11:31.000Z</pubTime>
         
-        <tag>Http</tag>
-         
         <tag>Volley</tag>
+         
+        <tag>Http</tag>
          
         <tag>Cache</tag>
          
@@ -253,26 +273,6 @@
            
              
               <breadCrumb title="Android" url="http://qianzui.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qianzui.github.io/blog/2012-05-01-how-to-correctly-write-singleton-pattern/</loc>
-    <lastmod>2016-04-25T12:12:20.027Z</lastmod>
-    <data>
-        <display>
-        <title>单例模式的正确写法</title>
-        <pubTime>2012-05-01T14:13:04.000Z</pubTime>
-        
-        <tag>单例模式</tag>
-         
-         
-           
-             
-              <breadCrumb title="设计模式" url="http://qianzui.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
           
         </display>
     </data>

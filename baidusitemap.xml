@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2012-05-01-how-to-correctly-write-singleton-pattern/</loc>
-    <lastmod>2016-07-13T04:57:18.965Z</lastmod>
+    <lastmod>2016-07-13T04:57:18.000Z</lastmod>
     <data>
         <display>
         <title>单例模式的正确写法</title>
@@ -25,7 +25,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2016-05-20-awesome-android-tips/</loc>
-    <lastmod>2016-06-24T06:42:36.605Z</lastmod>
+    <lastmod>2016-06-24T06:42:36.000Z</lastmod>
     <data>
         <display>
         <title>Android开发中需要注意的点</title>
@@ -43,7 +43,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2013-04-17-use-httpurlconnection-implements-file-upload/</loc>
-    <lastmod>2016-06-14T10:00:44.449Z</lastmod>
+    <lastmod>2016-06-14T10:00:44.000Z</lastmod>
     <data>
         <display>
         <title>HttpURLConnection实现HTTP文件上传</title>
@@ -67,15 +67,15 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2014-07-23-volley-deal-with-http-cache/</loc>
-    <lastmod>2016-06-14T09:53:27.365Z</lastmod>
+    <lastmod>2016-06-14T09:53:27.000Z</lastmod>
     <data>
         <display>
         <title>Volley对HTTP缓存的处理</title>
         <pubTime>2014-07-23T11:11:31.000Z</pubTime>
         
-        <tag>Volley</tag>
-         
         <tag>Http</tag>
+         
+        <tag>Volley</tag>
          
         <tag>Cache</tag>
          
@@ -91,7 +91,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2012-12-28-quick-sort/</loc>
-    <lastmod>2016-06-14T09:48:52.213Z</lastmod>
+    <lastmod>2016-06-14T09:48:52.000Z</lastmod>
     <data>
         <display>
         <title>快速排序</title>
@@ -111,7 +111,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2015-03-29-httpresponsecache-source-code-analysis/</loc>
-    <lastmod>2016-05-25T06:02:28.908Z</lastmod>
+    <lastmod>2016-05-25T06:02:28.000Z</lastmod>
     <data>
         <display>
         <title>HttpResponseCache原理分析</title>
@@ -133,7 +133,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2014-02-14-picasso-source-code-analysis/</loc>
-    <lastmod>2016-05-24T11:56:43.778Z</lastmod>
+    <lastmod>2016-05-24T11:56:43.000Z</lastmod>
     <data>
         <display>
         <title>Picasso源码解析</title>
@@ -155,7 +155,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2014-01-12-android-optimise-layout/</loc>
-    <lastmod>2016-05-24T09:15:45.242Z</lastmod>
+    <lastmod>2016-05-24T09:15:45.000Z</lastmod>
     <data>
         <display>
         <title>Android布局优化</title>
@@ -175,7 +175,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2013-12-13-script-to-update-git-project/</loc>
-    <lastmod>2016-05-24T09:08:28.886Z</lastmod>
+    <lastmod>2016-05-24T09:08:28.000Z</lastmod>
     <data>
         <display>
         <title>批量更新Git项目脚本</title>
@@ -195,7 +195,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2014-04-21-why-volley-request-twice/</loc>
-    <lastmod>2016-05-18T14:03:34.595Z</lastmod>
+    <lastmod>2016-05-18T14:03:34.000Z</lastmod>
     <data>
         <display>
         <title>Volley默认请求多次原因解析</title>
@@ -215,15 +215,15 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2015-10-03-generate-key-from-url/</loc>
-    <lastmod>2016-05-11T13:43:12.792Z</lastmod>
+    <lastmod>2016-05-11T13:43:12.000Z</lastmod>
     <data>
         <display>
         <title>根据URL生成缓存key算法</title>
         <pubTime>2015-10-03T15:13:04.000Z</pubTime>
         
-        <tag>Picasso</tag>
-         
         <tag>Volley</tag>
+         
+        <tag>Picasso</tag>
          
         <tag>OkHttp</tag>
          
@@ -239,7 +239,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2013-03-15-how-to-correctly-write-binarysearch/</loc>
-    <lastmod>2016-04-28T09:31:57.555Z</lastmod>
+    <lastmod>2016-04-28T09:31:57.000Z</lastmod>
     <data>
         <display>
         <title>如何正确的写出二分查找</title>
@@ -259,15 +259,15 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2013-07-18-learn-oop-principle-from-volley/</loc>
-    <lastmod>2016-04-25T12:26:05.583Z</lastmod>
+    <lastmod>2016-04-25T12:26:05.000Z</lastmod>
     <data>
         <display>
         <title>从Volley看面向对象六大原则</title>
         <pubTime>2013-07-18T14:11:34.000Z</pubTime>
         
-        <tag>Volley</tag>
-         
         <tag>面向对象</tag>
+         
+        <tag>Volley</tag>
          
          
            
@@ -281,7 +281,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2012-07-22-how-to-use-gson-on-android-platform/</loc>
-    <lastmod>2016-04-25T12:11:54.171Z</lastmod>
+    <lastmod>2016-04-25T12:11:54.000Z</lastmod>
     <data>
         <display>
         <title>Android Gson</title>
@@ -301,7 +301,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2016-03-28-android-calculator-source-code-analysis/</loc>
-    <lastmod>2016-04-25T12:09:32.215Z</lastmod>
+    <lastmod>2016-04-25T12:09:32.000Z</lastmod>
     <data>
         <display>
         <title>Android原生计算器源码分析</title>
@@ -323,7 +323,7 @@
     
   <url>
     <loc>http://qianzui.github.io/blog/2014-05-25-tinypng-script-to-compress-images/</loc>
-    <lastmod>2016-04-01T02:48:46.752Z</lastmod>
+    <lastmod>2016-04-01T02:48:46.000Z</lastmod>
     <data>
         <display>
         <title>使用TinyPNG批量压缩图片脚本</title>
